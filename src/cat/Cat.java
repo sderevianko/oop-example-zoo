@@ -1,5 +1,8 @@
-public class Cat extends Animal {
+package cat;
 
+import animal.Animal;
+
+public class Cat extends Animal {
     private int age = 7;
 
     public int getAge() {
@@ -12,6 +15,5 @@ public class Cat extends Animal {
 
     public void sleep() {
         System.out.println("Sleeping");
-
     }
 }

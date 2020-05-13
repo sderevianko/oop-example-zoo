@@ -1,5 +1,8 @@
-public class WoodenCat extends Animal {
+package cat;
 
+import animal.Animal;
+
+public class WoodenCat extends Animal {
     private int numberOfChildren = 4;
 
     public int getNumberOfChildren() {

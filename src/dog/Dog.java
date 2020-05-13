@@ -1,5 +1,8 @@
-public class Dog extends Animal {
+package dog;
 
+import animal.Animal;
+
+public class Dog extends Animal {
     private String name = "Jack";
 
     public String getName() {
