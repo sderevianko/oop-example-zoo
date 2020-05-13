@@ -8,13 +8,13 @@ import dog.Dog;
 public class Main {
 
     public static void main(String[] args) {
-	    Cat c = new Cat();
-	    Dog d = new Dog();
-	    WoodenCat w = new WoodenCat();
+        Cat c = new Cat();
+        Dog d = new Dog();
+        WoodenCat w = new WoodenCat();
         Animal a = new Cat();
         Animal an = new Animal();
-        
-	    System.out.println(c.getAge());
+
+        System.out.println(c.getAge());
         c.sleep();
         System.out.println(d.getName());
         d.play();
