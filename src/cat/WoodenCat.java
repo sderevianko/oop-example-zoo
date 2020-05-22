@@ -3,17 +3,19 @@ package cat;
 import animal.Animal;
 
 public class WoodenCat extends Animal {
-    private int numberOfChildren = 4;
 
-    public int getNumberOfChildren() {
-        return numberOfChildren;
+    private String material;
+
+    public WoodenCat (String material, String color, String kind) {
+        super(color, kind);
+        this.material = material;
     }
 
-    public void setNumberOfChildren(int numberOfChildren) {
-        this.numberOfChildren = numberOfChildren;
+    public String getMaterial() {
+        return material;
     }
 
-    public void hunt() {
-        System.out.println("Hunting");
+    public void stand() {
+        System.out.println("Standing on the table");
     }
 }

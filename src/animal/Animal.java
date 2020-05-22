@@ -1,11 +1,13 @@
 package animal;
 
 public class Animal {
-    private String color = "black";
-    private String kind = "good";
 
-    public void eat() {
-        System.out.println("Eating");
+    private final String color;
+    private final String kind;
+
+    public Animal (String color, String kind) {
+        this.color = color;
+        this.kind = kind;
     }
 
     public String getColor() {
@@ -16,11 +18,7 @@ public class Animal {
         return kind;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public void setKind(String kind) {
-        this.kind = kind;
+    public void eat() {
+        System.out.println("Eating");
     }
 }

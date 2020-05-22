@@ -8,20 +8,34 @@ import dog.Dog;
 public class Main {
 
     public static void main(String[] args) {
-        Cat c = new Cat();
-        Dog d = new Dog();
-        WoodenCat w = new WoodenCat();
-        Animal a = new Cat();
-        Animal an = new Animal();
+        final Cat cat = new Cat(3, "black", "Maine Coon");
+        final Dog dog = new Dog("Jack", "brown", "Shepherd");
+        final WoodenCat woodenCat = new WoodenCat("wood", "dark brown", "simple cat");
 
-        System.out.println(c.getAge());
-        c.sleep();
-        System.out.println(d.getName());
-        d.play();
-        System.out.println(w.getNumberOfChildren());
-        w.hunt();
-        a.eat();
-        System.out.println(an.getColor());
-        System.out.println(an.getKind());
+        final Animal siameseCat = new Cat(1, "white", "Siamese cat" );
+        final Animal animal = new Animal("unknown", "unknown");
+
+        System.out.println(cat.getAge());
+        cat.walk();
+        cat.sleep();
+
+        System.out.println(dog.getName());
+        dog.walk();
+        dog.play();
+
+        System.out.println(woodenCat.getMaterial());
+        woodenCat.stand();
+
+        System.out.println("The cat is eating now");
+        cat.eat();
+
+        System.out.println("The animal is eating now");
+        animal.eat();
+
+        System.out.println("The siamese cat is eating now");
+        siameseCat.eat();
+
+        System.out.println(animal.getColor());
+        System.out.println(animal.getKind());
     }
 }
